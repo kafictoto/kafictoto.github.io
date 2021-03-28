@@ -1,0 +1,113 @@
+.navbar, .navbar-donji {
+  background-color: #f6e5e6;
+}
+
+.nav-item a {
+  color: #3e090b;
+  font-size: 22px;
+}
+
+.jumbotron {
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jumbotron, .jumbotron-fluid {
+  background-image: url("../images/jumbotron4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.jumbotron-fluid {
+  background-image: url("../images/jumbotron.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.navbar-donji a:hover {
+  color: #220708;
+}
+
+.transbox {
+  background-color: rgba(61, 9, 11, 0.3);
+  color: #f6e5e6;
+}
+
+.list-left .list-group-item, .list-right .list-group-item {
+  background-color: rgba(246, 229, 230, 0.85);
+  color: #220708;
+  font-size: 20px;
+}
+
+.slika {
+  background-image: url(../images/pas1.jpg);
+  height: 300px;
+  background-size: cover;
+}
+
+.petfriend {
+  background-color: #f6e5e6;
+}
+
+.petfriend h2 {
+  font-weight: 300;
+}
+
+.col.mx-2.menucol {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.menucol:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
+
+.slajdermenu img {
+  background-size: cover;
+  background-position: center;
+}
+
+table.table {
+  width: 30%;
+  border: ridge;
+  background-color: #f6e5e6;
+}
+
+.table td, .table th {
+  border-top: none !important;
+}
+
+.table thead th {
+  border-bottom: 2px solid #bbacb6 !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .menucol img {
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .list-left .list-group-item, .list-right .list-group-item {
+    font-size: 15px;
+  }
+
+  .menucol:hover {
+    box-shadow: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .menucol img {
+    height: 200px;
+    /*srediti margine na menucol kad predju jedno ispod drugog*/
+  }
+}
+@media only screen and (max-width: 425px) {
+  /*srediti futer svuda*/
+}/*# sourceMappingURL=style.css.map */
