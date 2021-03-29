@@ -74,10 +74,22 @@
   background-position: center;
 }
 
-table.table {
-  width: 30%;
+table.table, table.tablep {
   border: ridge;
   background-color: #f6e5e6;
+}
+
+table.table {
+  width: 30%;
+}
+
+table.tablep {
+  width: 50%;
+}
+
+.tablep td, .tablep th {
+  border-left: 2px solid #bbacb6 !important;
+  border-right: 2px solid #bbacb6 !important;
 }
 
 .table td, .table th {
@@ -86,6 +98,15 @@ table.table {
 
 .table thead th {
   border-bottom: 2px solid #bbacb6 !important;
+}
+
+.poslasticeimg {
+  height: 250px;
+  width: 20%;
+}
+
+.box {
+  width: 70%;
 }
 
 @media only screen and (max-width: 768px) {
