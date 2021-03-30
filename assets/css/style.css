@@ -67,19 +67,20 @@
   background-position: center;
 }
 
-.petfriend {
-  background-color: #f6e5e6;
+.mid {
+  background-color: #fff !important;
 }
 
-.petfriend, .petfriendmid {
+.petfriend {
+  background-color: #f6e5e6;
   height: 400px;
   display: flex;
   align-items: center;
 }
-.petfriend .petfriendrow, .petfriendmid .petfriendrow {
+.petfriend .petfriendrow {
   height: 350px;
 }
-.petfriend h2, .petfriendmid h2 {
+.petfriend h2 {
   font-weight: 300;
 }
 
@@ -213,6 +214,14 @@ table.table {
     opacity: 1;
   }
 }
+.carousel-caption.d-none.d-md-block.transbox {
+  font-size: 20px;
+}
+
+.carousel-caption.d-none.d-md-block.transbox h5 {
+  font-size: 25px;
+}
+
 @media only screen and (max-width: 1450px) {
   .prvaslika {
     margin: 0px 10px;
@@ -238,7 +247,7 @@ table.table {
   }
 }
 @media only screen and (max-width: 1199px) {
-  .petfriend .petfriendrow, .petfriendmid {
+  .petfriend .petfriendrow {
     height: unset;
   }
 
@@ -247,7 +256,7 @@ table.table {
     background-position: unset;
   }
 
-  .container-fluid.petfriend, .container-fluid.petfriendmid {
+  .container-fluid.petfriend {
     height: 600px;
   }
 
@@ -266,6 +275,18 @@ table.table {
 
   .poslasticeimg {
     height: 0px;
+  }
+
+  .slikat {
+    background-position: right;
+  }
+
+  .petfriend {
+    display: table-row;
+  }
+
+  .slikat, .slikap {
+    margin-top: 20px;
   }
 }
 @media only screen and (max-width: 990px) {
@@ -310,7 +331,7 @@ table.table {
     font-size: 25px;
   }
 
-  .container-fluid.petfriend, .container-fluid.petfriendmid {
+  .container-fluid.petfriend {
     height: 700px;
   }
 

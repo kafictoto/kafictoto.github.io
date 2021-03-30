@@ -56,10 +56,11 @@ $activelink: #220708;
     background-size: cover;
     background-position: center;
 }
+.mid {
+    background-color: #fff!important;
+}
 .petfriend {
     background-color: $banerpink;
-}
-.petfriend, .petfriendmid {
     height: 400px;
     display: flex;
     align-items: center;
@@ -182,6 +183,12 @@ table.table {
       opacity: 1;
     }
   }
+.carousel-caption.d-none.d-md-block.transbox {
+    font-size: 20px;
+}
+.carousel-caption.d-none.d-md-block.transbox h5 {
+    font-size: 25px;
+}
 @media only screen and (max-width: 1450px) {
     .prvaslika {
         margin: 0px 10px;
@@ -206,14 +213,14 @@ table.table {
     }
 }
 @media only screen and (max-width: 1199px) {
-    .petfriend .petfriendrow, .petfriendmid {
+    .petfriend .petfriendrow {
         height: unset;
     }
     .slika, .slikat, .slikap, .slikak {
         height: 300px !important;
         background-position: unset;
     }
-    .container-fluid.petfriend, .container-fluid.petfriendmid {
+    .container-fluid.petfriend {
         height: 600px;
     }
     .poslasticeimg {
@@ -229,6 +236,15 @@ table.table {
     }
     .poslasticeimg {
         height: 0px;
+    }
+    .slikat {
+        background-position: right;
+    }
+    .petfriend {
+        display: table-row;
+    }
+    .slikat, .slikap {
+        margin-top: 20px;
     }
 }
 @media only screen and (max-width: 990px) {
@@ -268,7 +284,7 @@ table.table {
     h2.my-2.petfriendlyh2 {
         font-size: 25px;
     }
-    .container-fluid.petfriend, .container-fluid.petfriendmid {
+    .container-fluid.petfriend {
         height: 700px;
     }
     .totologo {
