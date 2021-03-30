@@ -1,3 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+body {
+  background-color: #fff;
+}
+
+body p {
+  font-size: 20px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+body h1, body h2, body h3, body h4 {
+  font-family: "Playfair Display", serif;
+}
+
 .totologo {
   height: 100px;
 }
@@ -67,19 +82,20 @@
   background-position: center;
 }
 
-.petfriend {
-  background-color: #f6e5e6;
+.mid {
+  background-color: #fff !important;
 }
 
-.petfriend, .petfriendmid {
+.petfriend {
+  background-color: #f6e5e6;
   height: 400px;
   display: flex;
   align-items: center;
 }
-.petfriend .petfriendrow, .petfriendmid .petfriendrow {
+.petfriend .petfriendrow {
   height: 350px;
 }
-.petfriend h2, .petfriendmid h2 {
+.petfriend h2 {
   font-weight: 300;
 }
 
@@ -87,6 +103,10 @@
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
+}
+
+.menucol {
+  position: unset !important;
 }
 
 .menucol:hover, .autor:hover {
@@ -213,6 +233,14 @@ table.table {
     opacity: 1;
   }
 }
+.carousel-caption.d-none.d-md-block.transbox {
+  font-size: 20px;
+}
+
+.carousel-caption.d-none.d-md-block.transbox h5 {
+  font-size: 25px;
+}
+
 @media only screen and (max-width: 1450px) {
   .prvaslika {
     margin: 0px 10px;
@@ -238,7 +266,7 @@ table.table {
   }
 }
 @media only screen and (max-width: 1199px) {
-  .petfriend .petfriendrow, .petfriendmid {
+  .petfriend .petfriendrow {
     height: unset;
   }
 
@@ -247,7 +275,7 @@ table.table {
     background-position: unset;
   }
 
-  .container-fluid.petfriend, .container-fluid.petfriendmid {
+  .container-fluid.petfriend {
     height: 600px;
   }
 
@@ -267,14 +295,39 @@ table.table {
   .poslasticeimg {
     height: 0px;
   }
+
+  .slikat {
+    background-position: right;
+  }
+
+  .petfriend {
+    display: table-row;
+  }
+
+  .slikat, .slikap {
+    margin-top: 20px;
+  }
 }
 @media only screen and (max-width: 990px) {
   * {
     overflow-x: hidden;
   }
 
-  .jumbotron-fluid, .box h5, .card-title {
-    overflow-y: hidden;
+  .jumbotron-fluid, .box h5, .card-title, .menurow, .menucol img, .container.text-center.d-xl-inline {
+    overflow-y: hidden !important;
+  }
+
+  .menucol {
+    position: relative !important;
+  }
+
+  .menurow {
+    display: unset !important;
+    padding: 0px !important;
+  }
+
+  .menucol img {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -310,7 +363,7 @@ table.table {
     font-size: 25px;
   }
 
-  .container-fluid.petfriend, .container-fluid.petfriendmid {
+  .container-fluid.petfriend {
     height: 700px;
   }
 
@@ -337,6 +390,6 @@ table.table {
 
   .nav-item a {
     color: #3e090b;
-    font-size: 20px;
+    font-size: 15px;
   }
 }/*# sourceMappingURL=originalcss.css.map */

@@ -1,5 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
 body {
   background-color: #fff;
+}
+
+body p {
+  font-size: 20px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+body h1, body h2, body h3, body h4 {
+  font-family: "Playfair Display", serif;
 }
 
 .totologo {
