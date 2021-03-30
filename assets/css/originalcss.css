@@ -1,0 +1,342 @@
+.totologo {
+  height: 100px;
+}
+
+.navbar, .navbar-donji {
+  background-color: #f6e5e6;
+}
+
+.nav-item a {
+  color: #3e090b;
+  font-size: 22px;
+}
+
+.jumbotron {
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jumbotron, .jumbotron-fluid {
+  background-image: url("../images/jumbotron4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.jumbotron-fluid {
+  background-image: url("../images/jumbotron.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.navbar-donji a:hover {
+  color: #220708;
+}
+
+.transbox, .transboxf {
+  background-color: rgba(61, 9, 11, 0.3);
+  color: #f6e5e6;
+}
+
+.list-left .list-group-item, .list-right .list-group-item {
+  background-color: rgba(246, 229, 230, 0.85);
+  color: #220708;
+  font-size: 20px;
+}
+
+.slika {
+  background-image: url(../images/pas1.jpg);
+}
+
+.slikat {
+  background-image: url(../images/totoro.jpg);
+}
+
+.slikap {
+  background-image: url(../images/poslastice1.jpg);
+}
+
+.slikak {
+  background-image: url(../images/kafa5.jpg);
+}
+
+.slika, .slikat, .slikap, .slikak {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.petfriend {
+  background-color: #f6e5e6;
+}
+
+.petfriend, .petfriendmid {
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+.petfriend .petfriendrow, .petfriendmid .petfriendrow {
+  height: 350px;
+}
+.petfriend h2, .petfriendmid h2 {
+  font-weight: 300;
+}
+
+.col.mx-2.menucol {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.menucol:hover, .autor:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
+
+.slajdermenu img {
+  background-size: cover;
+  background-position: center;
+}
+
+table.table, table.tablep {
+  border: ridge;
+  background-color: #f6e5e6;
+}
+
+table.table {
+  width: 30%;
+}
+
+table.tablep {
+  width: 50%;
+}
+
+.tablep td, .tablep th {
+  border-left: 2px solid #bbacb6 !important;
+  border-right: 2px solid #bbacb6 !important;
+}
+
+.table td, .table th {
+  border-top: none !important;
+}
+
+.table thead th {
+  border-bottom: 2px solid #bbacb6 !important;
+}
+
+.poslasticeimg {
+  height: 250px;
+  width: 20%;
+}
+
+.box {
+  width: 70%;
+}
+
+.drugaslika {
+  visibility: hidden;
+  height: 0px;
+  width: 0px;
+}
+
+.prvaslika {
+  margin: 0px 40px;
+}
+
+table.table {
+  overflow: hidden;
+}
+
+.autor img {
+  height: 500px;
+}
+
+.links li, .links a, .links a:hover, .links a:active, .li.list-group-item {
+  color: #3e090b !important;
+}
+
+.opis {
+  width: 50%;
+}
+
+.rowautor {
+  margin: 150px 0px;
+}
+
+.fade-in {
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.slide-in-fwd-center {
+  -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-in-fwd-center {
+  0% {
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-fwd-center {
+  0% {
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 1450px) {
+  .prvaslika {
+    margin: 0px 10px;
+  }
+}
+@media only screen and (max-width: 1310px) {
+  .prvaslika {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .drugaslika {
+    visibility: visible;
+    height: unset;
+    width: unset;
+    padding-bottom: 20px;
+  }
+
+  .prvaslika {
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .petfriend .petfriendrow, .petfriendmid {
+    height: unset;
+  }
+
+  .slika, .slikat, .slikap, .slikak {
+    height: 300px !important;
+    background-position: unset;
+  }
+
+  .container-fluid.petfriend, .container-fluid.petfriendmid {
+    height: 600px;
+  }
+
+  .poslasticeimg {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  table.table {
+    width: 100%;
+  }
+
+  .tablep {
+    height: 400px;
+  }
+
+  .poslasticeimg {
+    height: 0px;
+  }
+}
+@media only screen and (max-width: 990px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  .jumbotron-fluid, .box h5, .card-title {
+    overflow-y: hidden;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .menucol img {
+    height: 300px;
+  }
+
+  .container-fluid {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .totologo {
+    height: 70px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .list-left .list-group-item, .list-right .list-group-item {
+    font-size: 15px;
+  }
+
+  .menucol:hover {
+    box-shadow: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .menucol img {
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 426px) {
+  h2.my-2.petfriendlyh2 {
+    font-size: 25px;
+  }
+
+  .container-fluid.petfriend, .container-fluid.petfriendmid {
+    height: 700px;
+  }
+
+  .totologo {
+    height: 50px;
+  }
+
+  .futer1 {
+    display: unset !important;
+  }
+
+  .transboxf {
+    background-color: rgba(61, 9, 11, 0);
+    color: #3e090b;
+  }
+  .transboxf h2 {
+    font-size: 30px;
+  }
+
+  .jumbotron-fluid {
+    background-image: none;
+    height: unset;
+  }
+
+  .nav-item a {
+    color: #3e090b;
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=originalcss.css.map */
