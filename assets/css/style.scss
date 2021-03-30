@@ -142,10 +142,19 @@ table.table {
     .container-fluid.petfriend {
         height: 600px;
     }
+    .poslasticeimg {
+        width: 25%;
+    }
 }
 @media only screen and (max-width: 1024px) {
     table.table {
         width: 100%;
+    }
+    .tablep {
+        height: 400px;
+    }
+    .poslasticeimg {
+        height: 0px;
     }
 }
 @media only screen and (max-width: 990px) {
@@ -154,6 +163,9 @@ table.table {
     }
     .jumbotron-fluid {
         overflow-y: hidden;
+    }
+    .box h5{
+        overflow: visible!important;
     }
 }
 @media only screen and (max-width: 768px){
