@@ -124,6 +124,9 @@ table.table {
 .autor img {
     height: 500px;
 }
+.links li, .links a, .links a:hover, .links a:active, .li.list-group-item {
+    color:$tototext!important;
+}
 .opis {
     width: 50%;
 }
