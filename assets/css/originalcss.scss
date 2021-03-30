@@ -10,7 +10,6 @@ body {
 }
 body p {
     font-size: 20px;
-    font-family: "Noto Sans JP", sans-serif;
 }
 body h1, body h2, body h3, body h4 {
     font-family: "Playfair Display", serif;
@@ -158,6 +157,9 @@ table.table {
 .slide-in-fwd-center {
 	-webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.menurow img {
+    width: 90%;
 }
 @-webkit-keyframes slide-in-fwd-center {
     0% {
