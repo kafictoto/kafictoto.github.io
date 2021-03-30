@@ -119,6 +119,44 @@ table.tablep {
   width: 70%;
 }
 
+.drugaslika {
+  visibility: hidden;
+  height: 0px;
+  width: 0px;
+}
+
+.prvaslika {
+  margin: 0px 40px;
+}
+
+table.table {
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 1450px) {
+  .prvaslika {
+    margin: 0px 10px;
+  }
+}
+@media only screen and (max-width: 1310px) {
+  .prvaslika {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .drugaslika {
+    visibility: visible;
+    height: unset;
+    width: unset;
+    padding-bottom: 20px;
+  }
+
+  .prvaslika {
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+  }
+}
 @media only screen and (max-width: 1199px) {
   .petfriend .petfriendrow {
     height: unset;
@@ -133,6 +171,20 @@ table.tablep {
     height: 600px;
   }
 }
+@media only screen and (max-width: 1024px) {
+  table.table {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 990px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  .jumbotron-fluid {
+    overflow-y: hidden;
+  }
+}
 @media only screen and (max-width: 768px) {
   .menucol img {
     height: 300px;
@@ -141,7 +193,6 @@ table.tablep {
   .container-fluid {
     padding-left: 0px !important;
     padding-right: 0px !important;
-    overflow: hidden !important;
   }
 
   .totologo {
@@ -160,7 +211,6 @@ table.tablep {
 @media only screen and (max-width: 500px) {
   .menucol img {
     height: 200px;
-    /*srediti margine na menucol kad predju jedno ispod drugog*/
   }
 }
 @media only screen and (max-width: 426px) {
