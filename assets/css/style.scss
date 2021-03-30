@@ -41,12 +41,25 @@ $activelink: #220708;
 }
 .slika {
     background-image: url(../images/pas1.jpg);
+}
+.slikat {
+    background-image: url(../images/totoro.jpg);
+}
+.slikap {
+    background-image: url(../images/poslastice1.jpg);
+}
+.slikak {
+    background-image: url(../images/kafa5.jpg);
+}
+.slika, .slikat, .slikap, .slikak {
     height: 300px;
     background-size: cover;
     background-position: center;
 }
 .petfriend {
     background-color: $banerpink;
+}
+.petfriend, .petfriendmid {
     height: 400px;
     display: flex;
     align-items: center;
@@ -132,14 +145,14 @@ table.table {
     }
 }
 @media only screen and (max-width: 1199px) {
-    .petfriend .petfriendrow {
+    .petfriend .petfriendrow, .petfriendmid {
         height: unset;
     }
-    .slika {
+    .slika, .slikat, .slikap, .slikak {
         height: 300px !important;
         background-position: unset;
     }
-    .container-fluid.petfriend {
+    .container-fluid.petfriend, .container-fluid.petfriendmid {
         height: 600px;
     }
     .poslasticeimg {
@@ -161,11 +174,8 @@ table.table {
     * {
         overflow-x: hidden;
     }
-    .jumbotron-fluid {
+    .jumbotron-fluid, .box h5, .card-title {
         overflow-y: hidden;
-    }
-    .box h5{
-        overflow: visible!important;
     }
 }
 @media only screen and (max-width: 768px){
@@ -197,7 +207,7 @@ table.table {
     h2.my-2.petfriendlyh2 {
         font-size: 25px;
     }
-    .container-fluid.petfriend {
+    .container-fluid.petfriend, .container-fluid.petfriendmid {
         height: 700px;
     }
     .totologo {
