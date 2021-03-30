@@ -15,7 +15,7 @@
         <header class="container-fluid">
               <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../assets/images/logo/totorologo.png" height="100px" alt="TotoLogo">
+                    <img src="../assets/images/logo/totorologo.png" class="totologo" alt="TotoLogo">
                   </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -89,8 +89,38 @@
             <span class="sr-only">Next</span>
             </a>
         </div>
-    </div>
-       <footer class="container-fluid">
+      </div>
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">Naručite bilo šta sa našeg menija!</h5>
+          <p class="card-text">U ovo vreme, bitno je biti odgovoran i siguran. Zato Toto kafić radi na tome da sve možete da dobijete bez napuštanja pogodnosti svog doma.</p>
+          <button type="button" class="btn btn-outline-secondary btn-lg" data-toggle="modal" data-target="#exampleModal">
+            Poručite
+          </button>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="exampleModalLabel">Dolazi uskoro</h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h4>Nažalost, ova opcija nije još uvek dostpuna, ali radimo na tome!</h4>
+                  <div class="spinner-border text-secondary" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="container-fluid">
         <div class="jumbotron jumbotron-fluid">
             <div class="container transbox pb-2">
                 <h2 class="display-4 px-3 text-center">Vidimo se uskoro!</h2>
@@ -130,12 +160,12 @@
                 <li class="nav-item">
                     <a class="nav-link px-4" href="autor.html">Autor</a>
                 </li>
-              </ul>
+            </ul>
         </div>
         <div class="row justify-content-center">
             <p>copyright</p>
         </div>
-    </footer>
+      </footer>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>

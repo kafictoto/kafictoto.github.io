@@ -1,3 +1,7 @@
+.totologo {
+  height: 100px;
+}
+
 .navbar, .navbar-donji {
   background-color: #f6e5e6;
 }
@@ -30,7 +34,7 @@
   color: #220708;
 }
 
-.transbox {
+.transbox, .transboxf {
   background-color: rgba(61, 9, 11, 0.3);
   color: #f6e5e6;
 }
@@ -45,12 +49,18 @@
   background-image: url(../images/pas1.jpg);
   height: 300px;
   background-size: cover;
+  background-position: center;
 }
 
 .petfriend {
   background-color: #f6e5e6;
+  height: 400px;
+  display: flex;
+  align-items: center;
 }
-
+.petfriend .petfriendrow {
+  height: 350px;
+}
 .petfriend h2 {
   font-weight: 300;
 }
@@ -109,9 +119,32 @@ table.tablep {
   width: 70%;
 }
 
+@media only screen and (max-width: 1199px) {
+  .petfriend .petfriendrow {
+    height: unset;
+  }
+
+  .slika {
+    height: 300px !important;
+    background-position: unset;
+  }
+
+  .container-fluid.petfriend {
+    height: 600px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .menucol img {
     height: 300px;
+  }
+
+  .container-fluid {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .totologo {
+    height: 70px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -129,6 +162,38 @@ table.tablep {
     /*srediti margine na menucol kad predju jedno ispod drugog*/
   }
 }
-@media only screen and (max-width: 425px) {
-  /*srediti futer svuda*/
+@media only screen and (max-width: 426px) {
+  h2.my-2.petfriendlyh2 {
+    font-size: 25px;
+  }
+
+  .container-fluid.petfriend {
+    height: 700px;
+  }
+
+  .totologo {
+    height: 50px;
+  }
+
+  .futer1 {
+    display: unset !important;
+  }
+
+  .transboxf {
+    background-color: rgba(61, 9, 11, 0);
+    color: #3e090b;
+  }
+  .transboxf h2 {
+    font-size: 30px;
+  }
+
+  .jumbotron-fluid {
+    background-image: none;
+    height: unset;
+  }
+
+  .nav-item a {
+    color: #3e090b;
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
